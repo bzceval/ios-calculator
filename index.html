@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./css/style.css">
     <title>IOS Calculator</title>
 </head>
@@ -18,12 +22,33 @@
 
                 <!-- View Screen -->
                 <div class="view-secreen">
-                    <p id="firstResult" class="text-secondary text-right">7 x</p>
-                    <p id="secondResult" class="text-white text-right"> 5 </p>
+                    <p id="firstResult" class="text-secondary">7 x</p>
+                    <p id="secondResult" class="text-white"> 5 </p>
                 </div>
 
                 <!-- Calculate Screen -->
-                <div class="calculate-screen"></div>
+                <div class="calculate-screen">
+                    <div class="container">
+                        <div class="numbers">
+                            <div id="ac-oparator" class="bg-gray">AC</div>
+                            <div id="minus-plus" class="bg-gray">+/-</div>
+                            <div id="percent" class="bg-gray">%</div>
+                            <div id="oparator" class="bg-warning">÷</div>
+                            <div id="number">7</div>
+                            <div id="number">8</div>
+                            <div id="number">9</div>
+                            <div id="oparator" class="bg-warning">x</div>
+                            <div id="number">4</div>
+                            <div id="number">5</div>
+                            <div id="number">6</div>
+                            <div id="oparator" class="bg-warning">-</div>
+                            <div id="number">1</div>
+                            <div id="number">2</div>
+                            <div id="number">3</div>
+                            <div id="oparator" class="bg-warning">=</div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
