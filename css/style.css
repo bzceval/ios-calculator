@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.calculator{
+    height: 100vh;
+}
+.all-screen{  
+    background-color: grey;
+    width: 25rem;
+    height: 35rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end; */
+    border-radius: 2rem;
+    background-color: black;
+    gap: 5px;
+}
