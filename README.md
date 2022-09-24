@@ -8,7 +8,7 @@ Project aims to create a calculator app.
 |----solution
         |----index.html  
         |----style.css   
-        |----index.js
+        |----app.js
 
 ## Expected Outcome
 ![ios-calc](./images/ios-calc.gif)
