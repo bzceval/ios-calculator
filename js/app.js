@@ -15,7 +15,9 @@ numbers.addEventListener("click", (event) => {
   // console.log(event.target)
   //number event
   if (event.target.className == "number") {
-    console.log("number");
+    // console.log("number");
+    number2 += event.target.innerText;
+    secondResult.innerText = number2;
   } 
   // opator event
   else if (event.target.className == "oparator") {
@@ -27,7 +29,9 @@ numbers.addEventListener("click", (event) => {
   }
   // percent event
    else if (event.target.classList.contains("percent")) {
-    console.log("percent");
+    // console.log("percent");
+    number2 /= 100; 
+    secondResult.innerHTML = number2;
   } 
   // ac-calcutor event
   else if (event.target.classList.contains("ac-oparator")) {
@@ -38,7 +42,8 @@ numbers.addEventListener("click", (event) => {
   else if (event.target.classList.contains("minus-plus")) {
     // console.log("minus-plus");
     number2 *= -1;
-  }
+    firstResult.innerText = number2; 
+  } 
 });
 
 // Reset Function
