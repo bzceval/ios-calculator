@@ -2,55 +2,65 @@ const container = document.querySelector(".container");
 let result1 = document.querySelector("#result1");
 let result2 = document.querySelector("#result2");
 
-let num1 = "";
-let num2 = "";
+let number1 = "";
+let number2 = "";
 let operator = "";
 
 container.addEventListener("click", (event) => {
-  if (event.target.classList.contains("number")) {
-    num2 += event.target.innerText;
-    result1.innerText = num2;
-  } else if (event.target.classList.contains("operator-ac")) {
+  //number click event  
+  if (event.target.className === "number") {
+    // console.log(e.target)
+    number2 += event.target.innerText;
+    result1.innerText = number2;
+  }
+  // ac click event 
+  else if (event.target.classList.contains("operator-ac")) {
     reset();
-  } else if (event.target.classList.contains("operator")) {
-    if (num1) {
-      if (!num2) {
+  } 
+  // operator click event 
+  else if (event.target.classList.contains("operator")) {
+    if (number1) {
+      if (!number2) {
         alert("Enter a number!");
       } else {
-        num1 = calculate(Number(num1), operator, Number(num2));
-        if (String(num1).slice(String(num1).indexOf(".")).length > 6) {
-          num1 = num1.toFixed(6);
-        }
+        number1 = calculate(Number(number1), operator, Number(number2));
+        // if (String(number1).slice(String(number1).indexOf(".")).length > 6) {
+        //   number1 = number1.toFixed(6);
+        // }
         operator = event.target.innerText;
-        result2.innerText = num1 + " " + operator;
+        result2.innerText = `${number1} ${operator}`;
         result1.innerText = "";
-        num2 = "";
+        number2 = "";
       }
     } else {
-      num2 = result1.innerText;
-      num1 = num2;
-      num2 = "";
+      number2 = result1.innerText;
+      number1 = number2;
+      number2 = "";
       operator = event.target.innerText;
-      result2.innerText = num1 + " " + operator;
+      result2.innerText = `${number1} ${operator}`;
       result1.innerText = "";
     }
-  } else if (event.target.classList.contains("equal")) {
-    num2 = calculate(Number(num1), operator, Number(num2));
-    if (String(num2).length > 6) {
-      num2 = num2.toFixed(6);
+  } 
+  // equal click event 
+  else if (event.target.classList.contains("equal")) {
+    number2 = calculate(Number(number1), operator, Number(number2));
+    if (String(number2).length > 6) {
+      number2 = number2.toFixed(6);
     }
-    result1.innerText = num2;
+    result1.innerText = number2;
     result2.innerText = "";
-    num1 = "";
-    num2 = "";
+    number1 = "";
+    number2 = "";
+  } 
+  // minus-plus click event
+  else if (event.target.id === "minus-plus") {
+    number2 *= -1;
+    result1.innerText = number2;
   }
-  if (event.target.id === "minus-plus") {
-    num2 *= -1;
-    result1.innerText = num2;
-  }
-  if (event.target.id === "percent") {
-    num2 /= 100;
-    result1.innerText = num2;
+  // percent click event 
+  else if (event.target.id === "percent") {
+    number2 /= 100;
+    result1.innerText = number2;
   }
 });
 
@@ -68,11 +78,9 @@ function calculate(n1, oper, n2) {
 }
 
 function reset() {
-  num1 = "";
-  num2 = "";
+  number1 = "";
+  number2 = "";
   operator = "";
   result1.innerText = "";
   result2.innerText = "";
 }
-
-console.log(calculate(3, "+", 4));
