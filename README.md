@@ -11,7 +11,8 @@ Project aims to create a calculator app.
         |----app.js
 
 ## Expected Outcome
-![ios-calc](./images/ios-calc.gif)
+<img src="./images/ios-calc.gif" width="300" height="500">
+
 
 ## Objective
 Build a Calculator that is functionally similar to an ios device calculator.
