@@ -11,7 +11,7 @@ Project aims to create a calculator app.
         |----app.js
 
 ## Expected Outcome
-<img src="./images/ios-calc.gif" width="100" height="100">
+<img src="./images/ios-calc.gif" width="300" height="300">
 
 
 ## Objective
