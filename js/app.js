@@ -38,7 +38,6 @@ numbers.addEventListener("click", (event) => {
   else if (event.target.classList.contains("minus-plus")) {
     // console.log("minus-plus");
     number2 *= -1;
-    
   }
 });
 
