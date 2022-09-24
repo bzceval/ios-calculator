@@ -2,72 +2,94 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-body {
-  font-family: "Montserrat", sans-serif;
-}
-.calculator {
-  height: 100vh;
-}
-.all-screen {
-  background-color: black;
-  width: 25rem;
-  height: 38rem;
+
+
+
+.outbox {
+  margin: auto;
+  margin-top: 5rem;
+  background-color: grey;
+  width: 23rem;
+  height: 39rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
   border-radius: 2rem;
+  background-color: black;
   gap: 5px;
 }
-/*View Screen*/
-.view-secreen p {
+
+.outbox p {
+  padding-right: 2.5rem;
+}
+
+#result2 {
   text-align: right;
-  width: 25rem;
-  padding-right: 2.3rem;
-}
-#firstResult {
-  padding-top: 1rem;
-  font-size: 1.8rem;
-}
-#secondResult {
-  font-size: 3.2rem;
-}
-/*Calculate Screen*/
-.numbers {
-  background-color: black;
+  font-size: 25px;
   width: 23rem;
+}
+
+#result1 {
+  text-align: right;
+  font-size: 3.2rem;
+  height: 4.5rem;
+  width: 23rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+
+
+.container {
+  margin-bottom: 1rem;
+  background-color: black;
+  width: 21rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
   justify-items: center;
   border-radius: 2rem;
-  gap: 0.5rem;
+  gap: .5rem;
 }
 
-.calculate-screen #ac-oparator,
+.orange {
+  background-color: orange !important;
+}
+
+.gray {
+  background-color: rgb(169, 169, 169) !important;
+  color: black !important;
+  font-weight: 500 !important;
+}
+
+.container .number,
+.container .operator,
+.container .equal,
 #minus-plus,
-#percent,
-.oparator,
-.number {
+#percent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50%;
   color: white;
   background-color: rgb(57, 57, 57);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
 }
-#oparator {
-  background-color: orange;
-}
-.calculate-screen #ac-oparator:hover,
+
+.container .number:hover,
+.container .operator:hover,
+.container .equal:hover,
 #minus-plus:hover,
-#percent:hover,
-.oparator:hover,
-.number:hover {
+#percent:hover {
   opacity: 0.6;
-  transition: all 0.4s;
   cursor: pointer;
 }
+
 
 .zero {
   justify-content: flex-start !important;
