@@ -24,9 +24,9 @@ container.addEventListener("click", (event) => {
         alert("Enter a number!");
       } else {
         number1 = calculate(Number(number1), operator, Number(number2));
-        // if (String(number1).slice(String(number1).indexOf(".")).length > 6) {
-        //   number1 = number1.toFixed(6);
-        // }
+        if (String(number1).slice(String(number1).indexOf(".")).length > 6) {
+          number1 = number1.toFixed(6);
+        }
         operator = event.target.innerText;
         result2.innerText = `${number1} ${operator}`;
         result1.innerText = "";
