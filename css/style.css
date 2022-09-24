@@ -7,10 +7,14 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
-
+.screen {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .outbox {
   margin: auto;
-  margin-top: 5rem;
   background-color: grey;
   width: 24rem;
   height: 39rem;
