@@ -43,8 +43,8 @@ body {
 .calculate-screen #ac-oparator,
 #minus-plus,
 #percent,
-#oparator,
-#number {
+.oparator,
+.number {
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50%;
@@ -55,12 +55,14 @@ body {
   justify-content: center;
   font-size: 1rem;
 }
-
+#oparator {
+  background-color: orange;
+}
 .calculate-screen #ac-oparator:hover,
 #minus-plus:hover,
 #percent:hover,
-#oparator:hover,
-#number:hover {
+.oparator:hover,
+.number:hover {
   opacity: .6;
   transition: all .4s;
   cursor: pointer;
