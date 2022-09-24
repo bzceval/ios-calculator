@@ -36,9 +36,20 @@ numbers.addEventListener("click", (event) => {
   } 
   // minus-plus event
   else if (event.target.classList.contains("minus-plus")) {
-    console.log("minus-plus");
+    // console.log("minus-plus");
+    number2 *= -1;
+    
   }
 });
+
+// Reset Function
+function reset() {
+    let number1 = "";
+    let number2 = "";
+    let operator = "";
+    firstResult.innerText = "";
+    secondResult.innerText = "";
+  }
 
 // Calculate Function
 function calculate(n1, operator, n2) {
@@ -53,11 +64,4 @@ function calculate(n1, operator, n2) {
     }
   }
 }
-// Reset Function
-function reset() {
-  let number1 = "";
-  let number2 = "";
-  let operator = "";
-  firstResult.innerText = "";
-  secondResult.innerText = "";
-}
+
