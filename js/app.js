@@ -13,17 +13,29 @@ let operator = "";
 //Event Control
 numbers.addEventListener("click", (event) => {
   // console.log(event.target)
+  //number event
   if (event.target.className == "number") {
     console.log("number");
-  } else if (event.target.className == "oparator") {
+  } 
+  // opator event
+  else if (event.target.className == "oparator") {
     console.log("oparator");
-  } else if (event.target.classList.contains("equal")) {
+  } 
+  // equal event
+  else if (event.target.classList.contains("equal")) {
     console.log("equal");
-  } else if (event.target.classList.contains("percent")) {
+  }
+  // percent event
+   else if (event.target.classList.contains("percent")) {
     console.log("percent");
-  } else if (event.target.classList.contains("ac-oparator")) {
-    console.log("ac-oparator");
-  } else if (event.target.classList.contains("minus-plus")) {
+  } 
+  // ac-calcutor event
+  else if (event.target.classList.contains("ac-oparator")) {
+    // console.log("ac-oparator");
+    reset()
+  } 
+  // minus-plus event
+  else if (event.target.classList.contains("minus-plus")) {
     console.log("minus-plus");
   }
 });
