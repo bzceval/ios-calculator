@@ -61,9 +61,19 @@ container.addEventListener("click", (event) => {
   else if (event.target.id === "percent") {
     number2 /= 100;
     result1.innerText = number2;
-  }
+  } 
+  // else if(event.target.id === "dot") {
+  //   changeFloat(event);
+  // }
 });
-
+ 
+// const changeFloat = (event) => {
+//   if (!event.target.classList.contains("dot")) {
+//     result1 = ".";
+//   } else {
+//     document.getElementById("dot").disabled = true;
+//   }
+// };
 function calculate(n1, oper, n2) {
   if (oper === "+") return n1 + n2;
   else if (oper === "-") return n1 - n2;
