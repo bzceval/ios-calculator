@@ -2,8 +2,8 @@
 Project aims to create a calculator app.
 
 ## Project Skeleton
-</br>
-|
+
+|----ios-calculator(folder)
 |----readme.md         # Given to the students (Definition of the project)          
 |----solution
         |----index.html  
