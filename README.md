@@ -2,7 +2,7 @@
 Project aims to create a calculator app.
 
 ## Project Skeleton
-<br>
+</br>
 |
 |----readme.md         # Given to the students (Definition of the project)          
 |----solution
